@@ -18,6 +18,5 @@ from examples and logs.
 
 ## Supported releases
 
-Corfedo is in active development. Each project's security policy will document
-supported versions when stable releases are published. A repository-specific
-security policy takes precedence over this default.
+Corfedo is in active development. A repository-specific security policy takes
+precedence over this default, including any version-specific support information.

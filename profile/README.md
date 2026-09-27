@@ -14,7 +14,6 @@ across repositories.
 We're building code search, module discovery, and cross-repository context for
 developers and coding agents, with web, API, MCP, and CLI interfaces.
 
-Corfedo is in active development. Public project repositories and documentation
-will be linked here as they become available.
+Corfedo is in active development.
 
 [Get involved](mailto:contact@corfedo.ai)
