@@ -1,0 +1,57 @@
+name: Feature request
+description: Describe a problem and the outcome you want from Corfedo.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this issue in the relevant project repository.
+        Use nonconfidential examples and remove credentials, tokens, and proprietary source code.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Current workflow
+      description: How do you handle this today? Describe any workaround or limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: What should become possible or easier? An implementation proposal is optional.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Example use case
+      description: Give a concrete example of how you would use the proposed change.
+    validations:
+      required: false
+  - type: dropdown
+    id: interface
+    attributes:
+      label: Affected interface
+      multiple: true
+      options:
+        - Web
+        - API
+        - CLI
+        - MCP
+        - Search/indexing
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include related issues, alternatives, or constraints.
+    validations:
+      required: false
