@@ -1,0 +1,21 @@
+name: Release notes
+description: >-
+  Writes the release notes of the tag being built from its Conventional Commits since the previous v* tag, grouped by
+  type and crediting each author. Needs a checkout with full history (fetch-depth 0).
+outputs:
+  path:
+    description: Markdown file with the release notes.
+    value: ${{ steps.notes.outputs.path }}
+runs:
+  using: composite
+  steps:
+    - id: notes
+      shell: bash
+      env:
+        # Resolves commit authors to GitHub accounts.
+        GITHUB_TOKEN: ${{ github.token }}
+        CONFIG: ${{ github.action_path }}/cliff.toml
+      run: |
+        path="$RUNNER_TEMP/release-notes.md"
+        pipx run git-cliff==2.14.2 --config "$CONFIG" --github-repo "$GITHUB_REPOSITORY" --current --output "$path"
+        echo "path=$path" >> "$GITHUB_OUTPUT"
