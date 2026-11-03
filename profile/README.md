@@ -18,7 +18,7 @@ Web app · HTTP API · MCP server · CLI · Self-hosted
 
 - **Dependency inventory**: manifests and lockfiles for npm, PyPI, Maven, Gradle,
   NuGet, Go, Cargo, Composer, RubyGems and more, plus Docker images, GitHub
-  Actions and Terraform.
+  Actions, Terraform and Pulumi.
 - **Security findings**: dependencies matched against OSV advisories, including
   GitHub Security Advisories, per repository and across the organization.
 - **Code search**: find code, symbols and call sites across every repository.
